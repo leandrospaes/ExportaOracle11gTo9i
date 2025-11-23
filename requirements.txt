@@ -1,3 +1,6 @@
+# Para Oracle 9i, use cx-Oracle < 8.0:
+# cx-Oracle<8.0
+# Para Oracle 11g e versões mais recentes, use:
 cx-Oracle>=8.3
 python-dotenv>=1.0
 

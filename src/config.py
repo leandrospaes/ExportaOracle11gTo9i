@@ -14,6 +14,7 @@ class OracleConfig:
     user: str
     password: str
     schema: Optional[str] = None
+    client_path: Optional[str] = None
 
     @staticmethod
     def from_env(prefix: str) -> "OracleConfig":
@@ -21,6 +22,8 @@ class OracleConfig:
         dsn = os.environ.get(f"{env}_DSN")
         user = os.environ.get(f"{env}_USER")
         password = os.environ.get(f"{env}_PASSWORD")
+        # Path específico para este banco, ou fallback para path global
+        client_path = os.environ.get(f"{env}_CLIENT_PATH") or os.environ.get("ORACLE_CLIENT_PATH")
 
         if not all([dsn, user, password]):
             missing = ", ".join(
@@ -38,6 +41,7 @@ class OracleConfig:
             user=user,
             password=password,
             schema=os.environ.get(f"{env}_SCHEMA"),
+            client_path=client_path,
         )
 
 
