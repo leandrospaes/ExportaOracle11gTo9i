@@ -1,0 +1,50 @@
+{
+  "name": "exporta11gto9i-node",
+  "version": "0.1.0",
+  "description": "Node.js/TypeScript port of ExportaOracle11gTo9i (partial/full translation)",
+  "homepage": "https://github.com/leandrospaes/ExportaOracle11gTo9i#readme",
+  "bugs": {
+    "url": "https://github.com/leandrospaes/ExportaOracle11gTo9i/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leandrospaes/ExportaOracle11gTo9i.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "dist/main.js",
+  "scripts": { 
+    "build": "tsc",
+    "dev": "ts-node src/main.ts",
+    "start": "node dist/main.js"
+  },
+//   "dependencies": {
+//     "commander": "^11.0.0",
+//     "dotenv": "^16.0.0",
+//     "oracledb": "^5.3.0",
+//     "winston": "^3.9.0"
+//   },
+//   "devDependencies": {
+//     "ts-node": "^10.9.1",
+//     "typescript": "^5.0.0",
+//     "@types/node": "^20.0.0",
+//     "@types/commander": "^8.0.0",
+//     "@types/winston": "^2.4.4"
+//   }
+{
+  "devDependencies": {
+    "@types/commander": "^2.12.2",
+    "@types/node": "^20.0.0",
+    "@types/winston": "^2.4.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "commander": "^11.0.0",
+    "dotenv": "^16.0.0",
+    "oracledb": "^5.3.0",
+    "winston": "^3.9.0"
+  }
+}
+}

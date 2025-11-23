@@ -1,3 +1,8 @@
+node_modules/
+dist/
+.env
+.venv/
+*.log
 .venv/
 env/
 venv/
